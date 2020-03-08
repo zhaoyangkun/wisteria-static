@@ -1,7 +1,7 @@
 //pjax
 $(document).pjax('[data-pjax] a, a[data-pjax]', '#pjax-container', {
     fragment: '#pjax-container',
-    // timeout: 3000
+    timeout: 3000
 }).on("pjax:complete", function () {
     //pjax加载完毕后初始化事件和脚本，防止失效
     clickEvent();
